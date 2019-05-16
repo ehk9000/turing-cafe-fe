@@ -22,11 +22,21 @@ class App extends Component {
     const data = await fetch(url);
     const response = await data.json();
       this.setState({
-        reservations:response
+        reservations:response,
+        isLoading:false
       })
   }
 
   render() {
+    let display;
+
+    display = this.state.isLoading ? (
+      <p>Loading...</p>
+
+    )
+    :
+    <ResContainer reservations={this.state.reservations} />
+
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
@@ -35,8 +45,7 @@ class App extends Component {
 
         </div>
         <div className='resy-container'>
-        <ResContainer reservations={this.state.reservations} />
-          
+          {display}
         </div>
       </div>
     )
