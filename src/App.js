@@ -32,7 +32,6 @@ class App extends Component {
 
     display = this.state.isLoading ? (
       <p>Loading...</p>
-
     )
     :
     <ResContainer reservations={this.state.reservations} />
