@@ -1,0 +1,15 @@
+.cardWrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: inline;
+  background-color: white;
+  color: teal;
+  border: 6px teal solid;
+  border-radius: 15px;
+  width:300px;
+  height:200px;
+  margin:10px;
+}

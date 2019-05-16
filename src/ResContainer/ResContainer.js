@@ -10,7 +10,7 @@ const ResContainer = ({reservations}) => {
   })
 
   return (
-    <section>
+    <section className="cardWrapper">
       {display}
     </section>
   )
