@@ -15,10 +15,11 @@ class ResForm extends Component {
 
   handleChange = e => {
     console.log(e.target.name)
-    const {name, date, time, number} = e.target.name
+    const {name, date, time, number} = e.target.name 
     this.setState({
       
     })
+    
     
   }
 
