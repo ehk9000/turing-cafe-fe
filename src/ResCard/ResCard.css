@@ -1,6 +1,7 @@
 .cardWrapper {
   display: flex;
   flex-flow: row wrap;
+  margin-top: 25px;
 }
 
 .card {
